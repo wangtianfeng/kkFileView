@@ -5,7 +5,7 @@
 # Author:  sanxi
 # Version: 1.0
 # Date:    2021/09/17
-# Description: v1.0：修改kkFileView关闭进程机制  
+# Description: v1.0: 修改kkFileView关闭进程机制
 #############################
 #
 KKFILEVIEW_BIN_FOLDER=$(cd "$(dirname "$0")" || exit 1 ;pwd)
@@ -24,9 +24,9 @@ else
         cat "${PID_FILE}" | while read PID;do
             ## 如已读取完毕，则退出脚本。
             [ -z "$PID" ] && exit 2
-            echo "正在停止进程：${PID}..."
+            echo "正在停止进程: ${PID}..."
             ## 正常停止进程
-            kill -15 "${PID}" && echo "进程：${PID}停止成功！"
+            kill -15 "${PID}" && echo "进程: ${PID}停止成功！"
         done
         # 关闭所有进程后，重置pid。
         cat /dev/null > "$PID_FILE"

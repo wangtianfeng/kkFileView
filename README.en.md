@@ -18,17 +18,17 @@ special thanks to the supports of @唐老大 and the contributions of @端木详
 
 ### Official website and DOCS
 
-URL：[https://kkfileview.keking.cn](https://kkfileview.keking.cn)
+URL: [https://kkfileview.keking.cn](https://kkfileview.keking.cn)
 
 ### Live demo
 > Please treat public service kindly, or this would stop at any time.
 
-URL：[https://file.keking.cn](https://file.keking.cn)
+URL: [https://file.keking.cn](https://file.keking.cn)
 
 ### Documentation
-1. Full wiki document：https://gitee.com/kekingcn/file-online-preview/wikis/pages
-1. 中文文档：https://gitee.com/kekingcn/file-online-preview/blob/master/README.md
-1. English document：https://gitee.com/kekingcn/file-online-preview/blob/master/README.en.md
+1. Full wiki document: https://gitee.com/kekingcn/file-online-preview/wikis/pages
+1. 中文文档: https://gitee.com/kekingcn/file-online-preview/blob/master/README.md
+1. English document: https://gitee.com/kekingcn/file-online-preview/blob/master/README.en.md
 
 ### Contact us && Join us
 > We will answer everyone's questions in use of this project.
@@ -36,7 +36,7 @@ And please Google or Baidu first before asking a question, so that we can solve 
 Cherish life away from ineffective communication.
 
 ![输入图片说明](https://gitee.com/uploads/images/2017/1219/173717_934cb068_492218.png "屏幕截图.png")
-QQ group：613025121
+QQ group: 613025121
 
 ### Pictures for some samples
 #### 1. Text Preview  
@@ -99,7 +99,7 @@ Considering space issues, the pictures of other types of documents will not be s
 
 ### Quick Start
 > Technology stack
-- Spring boot： [spring boot Development Reference Guide](http://www.kailing.pub/PdfReader/web/viewer.html?file=springboot)
+- Spring boot:  [spring boot Development Reference Guide](http://www.kailing.pub/PdfReader/web/viewer.html?file=springboot)
 - Freemarker
 - Redisson 
 - Jodconverter
@@ -107,14 +107,14 @@ Considering space issues, the pictures of other types of documents will not be s
 - Redis(Optional, Unnecessary by default)
 - OpenOffice or LibreOffice(Integrated on Windows, will be installed automatically on Linux, need to be manually installed on Mac OS)
 
-1. First step：`git pull https://github.com/kekingcn/file-online-preview.git`
+1. First step: `git pull https://github.com/kekingcn/file-online-preview.git`
 
-2. Third step：Run the main method of FilePreviewApplication.java.After starting,visit `http://localhost:8012/`.
+2. Third step: Run the main method of FilePreviewApplication.java.After starting,visit `http://localhost:8012/`.
 If everything is ok,you will see the picture below.
 ![输入图片说明](https://gitee.com/uploads/images/2017/1213/100221_ea15202e_492218.png "屏幕截图.png")
 
 ### Changelog
-> May 20th 2020 ：
+> May 20th 2020 : 
 1. Support for global watermark and dynamic change of watermark content through parameters
 2. Support for CAD file Preview
 3. Add configuration item base.url, support using nginx reverse proxy and set context-path
@@ -132,7 +132,7 @@ If everything is ok,you will see the picture below.
 15. Official website build: [https://kkfileview.keking.cn](https://kkfileview.keking.cn)
 16. Official docker image repository build: [https://hub.docker.com/r/keking/kkfileview](https://hub.docker.com/r/keking/kkfileview)
 
-> June 18th 2019 ：
+> June 18th 2019 : 
 1. Support automatic cleaning of cache and preview files
 2. Support http/https stream url file preview
 3. Support FTP url file preview

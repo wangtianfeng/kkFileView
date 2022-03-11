@@ -3203,7 +3203,7 @@
                                     <xsl:when test="starts-with($operatortext,'&gt;')">greater than</xsl:when>
                                     <xsl:when test="starts-with($operatortext,'!=')">not equal to</xsl:when>
                                     <xsl:when test="starts-with($operatortext,'=')">equal to</xsl:when>
-                                    <!-- 注意：uof有的另几种操作码在oo中没有，他们是contain,not contain,start with,not start with, end with,not end with-->
+                                    <!-- 注意: uof有的另几种操作码在oo中没有，他们是contain,not contain,start with,not start with, end with,not end with-->
                                 </xsl:choose>
                             </xsl:when>
                             <xsl:when test="starts-with($conditiontext,'cell-content-is-between')">between</xsl:when>
@@ -3243,7 +3243,7 @@
                                     <xsl:when test="starts-with($operatortext,'=')">
                                         <xsl:value-of select="substring-after($conditiontext,'=')"/>
                                     </xsl:when>
-                                    <!-- 注意：uof有的另几种操作码在oo中没有，他们是contain,not contain,start with,not start with, end with,not end with-->
+                                    <!-- 注意: uof有的另几种操作码在oo中没有，他们是contain,not contain,start with,not start with, end with,not end with-->
                                 </xsl:choose>
                             </xsl:when>
                         </xsl:choose>
@@ -5861,7 +5861,7 @@
                         </xsl:when>
                         <xsl:when test="contains($conditiontext,'is-between')">between</xsl:when>
                         <xsl:when test="contains($conditiontext,'is-not-between')">not between</xsl:when>
-                        <!-- 注意：uof有的另几种操作码在oo中没有，他们是contain,not contain,start with,not start with, end with,not end with-->
+                        <!-- 注意: uof有的另几种操作码在oo中没有，他们是contain,not contain,start with,not start with, end with,not end with-->
                     </xsl:choose>
                 </xsl:element>
                 <xsl:element name="表:第一操作数">

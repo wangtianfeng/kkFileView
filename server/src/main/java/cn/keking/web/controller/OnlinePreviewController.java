@@ -66,12 +66,12 @@ public class OnlinePreviewController {
             return otherFilePreview.notSupportedFile(model, errorMsg);
         }
         if (!allowPreview(fileUrl)) {
-            return otherFilePreview.notSupportedFile(model, "该文件不允许预览：" + fileUrl);
+            return otherFilePreview.notSupportedFile(model, "该文件不允许预览: " + fileUrl);
         }
         FileAttribute fileAttribute = fileHandlerService.getFileAttribute(fileUrl, req);
         model.addAttribute("file", fileAttribute);
         FilePreview filePreview = previewFactory.get(fileAttribute);
-        logger.info("预览文件url：{}，previewType：{}", fileUrl, fileAttribute.getType());
+        logger.info("预览文件url: {}，previewType: {}", fileUrl, fileAttribute.getType());
         return filePreview.filePreviewHandle(fileUrl, model, fileAttribute);
     }
 
@@ -84,7 +84,7 @@ public class OnlinePreviewController {
             String errorMsg = String.format(BASE64_DECODE_ERROR_MSG, "urls");
             return otherFilePreview.notSupportedFile(model, errorMsg);
         }
-        logger.info("预览文件url：{}，urls：{}", fileUrls, urls);
+        logger.info("预览文件url: {}，urls: {}", fileUrls, urls);
         // 抽取文件并返回文件列表
         String[] images = fileUrls.split("\\|");
         List<String> imgUrls = Arrays.asList(images);
@@ -94,12 +94,12 @@ public class OnlinePreviewController {
         if (StringUtils.hasText(currentUrl)) {
             String decodedCurrentUrl = new String(Base64.decodeBase64(currentUrl));
             if (!allowPreview(decodedCurrentUrl)) {
-                return otherFilePreview.notSupportedFile(model, "该文件不允许预览：" + decodedCurrentUrl);
+                return otherFilePreview.notSupportedFile(model, "该文件不允许预览: " + decodedCurrentUrl);
             }
             model.addAttribute("currentUrl", decodedCurrentUrl);
         } else {
             if (!allowPreview(imgUrls.get(0))) {
-                return otherFilePreview.notSupportedFile(model, "该文件不允许预览：" + imgUrls.get(0));
+                return otherFilePreview.notSupportedFile(model, "该文件不允许预览: " + imgUrls.get(0));
             }
             model.addAttribute("currentUrl", imgUrls.get(0));
         }
@@ -115,7 +115,7 @@ public class OnlinePreviewController {
      */
     @RequestMapping(value = "/getCorsFile", method = RequestMethod.GET)
     public void getCorsFile(String urlPath, HttpServletResponse response) {
-        logger.info("下载跨域pdf文件url：{}", urlPath);
+        logger.info("下载跨域pdf文件url: {}", urlPath);
         try {
             URL url = WebUtils.normalizedURL(urlPath);
             if (!allowPreview(urlPath)) {
@@ -127,7 +127,7 @@ public class OnlinePreviewController {
             byte[] bytes = NetUtil.downloadBytes(url.toString());
             IOUtils.write(bytes, response.getOutputStream());
         } catch (IOException | GalimatiasParseException e) {
-            logger.error("下载跨域pdf文件异常，url：{}", urlPath, e);
+            logger.error("下载跨域pdf文件异常，url: {}", urlPath, e);
         }
     }
 
@@ -139,7 +139,7 @@ public class OnlinePreviewController {
     @RequestMapping("/addTask")
     @ResponseBody
     public String addQueueTask(String url) {
-        logger.info("添加转码队列url：{}", url);
+        logger.info("添加转码队列url: {}", url);
         cacheService.addQueueTask(url);
         return "success";
     }
@@ -159,7 +159,7 @@ public class OnlinePreviewController {
             }
             return true;
         } catch (IOException | GalimatiasParseException e) {
-            logger.error("解析URL异常，url：{}", urlPath, e);
+            logger.error("解析URL异常，url: {}", urlPath, e);
             return false;
         }
     }

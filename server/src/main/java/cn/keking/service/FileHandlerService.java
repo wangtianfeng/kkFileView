@@ -75,7 +75,7 @@ public class FileHandlerService {
     /**
      * 从路径中获取文件负
      *
-     * @param path 类似这种：C:\Users\yudian-it\Downloads
+     * @param path 类似这种: C:\Users\yudian-it\Downloads
      * @return 文件名
      */
     public String getFileNameFromPath(String path) {
@@ -212,7 +212,7 @@ public class FileHandlerService {
             doc.close();
             this.addConvertedPdfImage(pdfFilePath, pageCount);
         } catch (IOException e) {
-            logger.error("Convert pdf to jpg exception, pdfFilePath：{}", pdfFilePath, e);
+            logger.error("Convert pdf to jpg exception, pdfFilePath: {}", pdfFilePath, e);
         }
         return imageUrls;
     }
@@ -244,7 +244,7 @@ public class FileHandlerService {
             cadImage.close();
             return true;
         } catch (FileNotFoundException e) {
-            logger.error("PDFFileNotFoundException，inputFilePath：{}", inputFilePath, e);
+            logger.error("PDFFileNotFoundException，inputFilePath: {}", inputFilePath, e);
             return false;
         }
     }

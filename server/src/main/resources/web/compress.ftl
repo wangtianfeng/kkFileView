@@ -43,7 +43,7 @@
         },
         callback:{
             beforeClick:function (treeId, treeNode, clickFlag) {
-                console.log("节点参数：treeId-" + treeId + "treeNode-"
+                console.log("节点参数: treeId-" + treeId + "treeNode-"
                         + JSON.stringify(treeNode) + "clickFlag-" + clickFlag);
             },
             onClick:function (event, treeId, treeNode) {

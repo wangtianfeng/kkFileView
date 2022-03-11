@@ -117,7 +117,7 @@ public class MediaFilePreviewImpl implements FilePreview {
      */
     private static String convertToMp4(FileAttribute fileAttribute) {
 
-        //说明：这里做临时处理，取上传文件的目录
+        //说明: 这里做临时处理，取上传文件的目录
         String homePath = ConfigUtils.getHomePath();
         String filePath = homePath+File.separator+"file"+File.separator+"demo"+File.separator+fileAttribute.getName();
         String convertFileName=fileAttribute.getUrl().replace(fileAttribute.getSuffix(),"mp4");

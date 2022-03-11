@@ -60,12 +60,12 @@ public class FileConvertQueueTask {
                     if (url != null) {
                         FileAttribute fileAttribute = fileHandlerService.getFileAttribute(url, null);
                         FileType fileType = fileAttribute.getType();
-                        logger.info("正在处理预览转换任务，url：{}，预览类型：{}", url, fileType);
+                        logger.info("正在处理预览转换任务，url: {}，预览类型: {}", url, fileType);
                         if (isNeedConvert(fileType)) {
                             FilePreview filePreview = previewFactory.get(fileAttribute);
                             filePreview.filePreviewHandle(url, new ExtendedModelMap(), fileAttribute);
                         } else {
-                            logger.info("预览类型无需处理，url：{}，预览类型：{}", url, fileType);
+                            logger.info("预览类型无需处理，url: {}，预览类型: {}", url, fileType);
                         }
                     }
                 } catch (Exception e) {
@@ -75,7 +75,7 @@ public class FileConvertQueueTask {
                         Thread.currentThread().interrupt();
                         ex.printStackTrace();
                     }
-                    logger.info("处理预览转换任务异常，url：{}", url, e);
+                    logger.info("处理预览转换任务异常，url: {}", url, e);
                 }
             }
         }

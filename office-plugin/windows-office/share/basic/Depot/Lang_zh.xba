@@ -26,7 +26,7 @@ Sub LoadChineseSimpleLanguage()
 	sCancel = &quot;取消&quot;
 	sColumnHeader = &quot;列标题&quot;
 	sInsertStockName = &quot;请首先往您的帐号内输入一些股票名称！&quot;
-	sTitle = &quot;&lt;PRODUCTNAME&gt;：股票管理&quot;
+	sTitle = &quot;&lt;PRODUCTNAME&gt;: 股票管理&quot;
 	sTitle = ReplaceString(sTitle, sProductName, &quot;&lt;PRODUCTNAME&gt;&quot;)
 	sMsgError = &quot;输入错误&quot;
 	sMsgNoName = sInsertStockname
@@ -35,7 +35,7 @@ Sub LoadChineseSimpleLanguage()
 	sMsgNoExchangeRate = &quot;请输入一个正确的兑换率(旧股-&gt; 新股)。&quot;
 	sMsgNoValidExchangeDate = &quot;请输入拆股生效日期。&quot;
 	sMsgWrongExchangeDate = &quot;因为在拆股生效后已经进行了股票交易，所以无法拆股。&quot;
-	sMsgSellTooMuch = &quot;您最多能出售的股票数为： &quot;
+	sMsgSellTooMuch = &quot;您最多能出售的股票数为:  &quot;
 	sMsgConfirm = &quot;需要确认&quot;
 	sMsgFreeStock = &quot;您想要输入赠送股票？&quot;
 	sMsgTotalLoss = &quot;您想要输入总亏损值？&quot;
@@ -53,16 +53,16 @@ Sub LoadChineseSimpleLanguage()
 	TransactMode = LIFO	&apos; Possible values: &quot;FIFO&quot; and &quot;LIFO&quot;
 	DateCellStyle = &quot;结果 日期&quot;
 	CurrCellStyle = &quot;1&quot;
-	sStartDate = &quot;起始日期：&quot;
-	sEndDate = &quot;终止日期：&quot;
+	sStartDate = &quot;起始日期: &quot;
+	sEndDate = &quot;终止日期: &quot;
 	sStartUpWelcome = &quot;这个样式能够帮助您有效地管理自己的股票帐号&quot;
 	sStartUpChooseMarket = &quot;请首先选择采用的参考货币以及要直接用国际互联网来更新资料的证券交易所！&quot;
 	sStartUpHint = &quot;很遗憾，&lt;History&gt;功能仅可供美国市场使用！&quot;
 	sStartupHint = ReplaceString(sStartUpHint, sHistory, &quot;&lt;History&gt;&quot;)
 	sNoInternetUpdate = &quot;不通过国际互联网更新&quot;
-	sMarketPlace = &quot;交易所：&quot;
+	sMarketPlace = &quot;交易所: &quot;
 	sNoInternetDataAvailable = &quot;无法获得国际互联网上的行情！&quot;
-	sCheckInternetSettings = &quot;可能的原因是：&lt;BR&gt;您的国际互联网设定不正确，需要重新设定。&lt;BR&gt;输入了一个错误的股票号码。&quot;
+	sCheckInternetSettings = &quot;可能的原因是: &lt;BR&gt;您的国际互联网设定不正确，需要重新设定。&lt;BR&gt;输入了一个错误的股票号码。&quot;
 	sCheckInternetSettings = ReplaceString(sCheckInternetSettings, chr(13), &quot;&lt;BR&gt;&quot;)
 
 	sMsgEndDatebeforeNow = &quot;终止日期必须在今天之前！&quot;

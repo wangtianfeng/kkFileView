@@ -1084,7 +1084,7 @@
                                 <xsl:when test="字:标点禁则/字:行首字符 or *[@uof:locID='t0007']/*[@uof:locID='t0008']">
                                     <xsl:value-of select="*[@uof:locID='t0007']/*[@uof:locID='t0008']"/>
                                 </xsl:when>
-                                <xsl:otherwise>:!),.:;?]}_'"、。〉》」』】〕〗〞︰︱︳﹐_﹒﹔﹕﹖﹗﹚﹜﹞！），．：；？｜｝︴︶︸︺︼︾﹀﹂﹄﹏_～￠々‖_·ˇˉ―--′</xsl:otherwise>
+                                <xsl:otherwise>:!),.:;?]}_'"、。〉》」』】〕〗〞︰︱︳﹐_﹒﹔﹕﹖﹗﹚﹜﹞！），．: ；？｜｝︴︶︸︺︼︾﹀﹂﹄﹏_～￠々‖_·ˇˉ―--′</xsl:otherwise>
                             </xsl:choose>
                         </config:config-item>
                         <config:config-item config:name="EndLine" config:type="string">

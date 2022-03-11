@@ -36,9 +36,9 @@ COLOR: #ffffff; BORDER-BOTTOM: #f0f0f0 1px solid; BACKGROUND-COLOR: #404040
 .divContent
  {
 color:#fff;
-font-size：30px；
-line-height：30px；
- font-family：“SimHei”；
+font-size: 30px；
+line-height: 30px；
+ font-family: “SimHei”；
  text-indent:2em;
  padding-bottom:10px;
  white-space: pre-wrap; /*css-3*/
@@ -217,7 +217,7 @@ line-height：30px；
                 strDisplayPagenation+="下一页  ";
             }
             
-            strDisplayPagenation+="共 " + pageSizeCount + " 页。<br>每页" + perpageLength + " 字符，调整字符数：<input type='text' value='"+perpageLength+"' id='ctlPerpageLength' /><input type='button' value='确定' onclick='DHTMLpagenation.change()' />";
+            strDisplayPagenation+="共 " + pageSizeCount + " 页。<br>每页" + perpageLength + " 字符，调整字符数: <input type='text' value='"+perpageLength+"' id='ctlPerpageLength' /><input type='button' value='确定' onclick='DHTMLpagenation.change()' />";
 
             divDisplayPagenation.innerHTML=strDisplayPagenation;
             
@@ -310,7 +310,7 @@ line-height：30px；
         
         /*  currentArray:当前页以 * 分割后的数组
             replaceCount:从开始内容到当前页的内容 * 的个数
-            matchArray ： img标签的匹配的内容
+            matchArray :  img标签的匹配的内容
         */
         function replaceStr(currentArray,replaceCount,matchArray)
         {

@@ -53,7 +53,7 @@ public class KkFileUtils {
                 return false;
             }
         } else {
-            LOGGER.info("删除单个文件失败：" + fileName + "不存在！");
+            LOGGER.info("删除单个文件失败: " + fileName + "不存在！");
             return false;
         }
     }
@@ -81,7 +81,7 @@ public class KkFileUtils {
             LOGGER.info("检测到文件【{}】编码: {}", file.getAbsolutePath(), encoding);
             return encoding;
         } catch (IOException e) {
-            LOGGER.warn("文件编码获取失败，采用默认的编码格式：UTF-8", e);
+            LOGGER.warn("文件编码获取失败，采用默认的编码格式: UTF-8", e);
             return DEFAULT_FILE_ENCODING;
         }
     }
@@ -123,7 +123,7 @@ public class KkFileUtils {
         File dirFile = new File(dir);
         // 如果dir对应的文件不存在，或者不是一个目录，则退出
         if ((!dirFile.exists()) || (!dirFile.isDirectory())) {
-            LOGGER.info("删除目录失败：" + dir + "不存在！");
+            LOGGER.info("删除目录失败: " + dir + "不存在！");
             return false;
         }
         boolean flag = true;

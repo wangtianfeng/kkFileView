@@ -35,7 +35,7 @@ Sub LoadChineseTradLanguage()
 	sMsgNoExchangeRate = &quot;請鍵入正確的換算比率(舊股票 -&gt; 新股票)。&quot;
 	sMsgNoValidExchangeDate = &quot;請輸入股票分割的日期。&quot;
 	sMsgWrongExchangeDate = &quot;無法分割股票，因為分割日期之後已經買進或賣出股票。&quot;
-	sMsgSellTooMuch = &quot;最多能出售的股票數： &quot;
+	sMsgSellTooMuch = &quot;最多能出售的股票數:  &quot;
 	sMsgConfirm = &quot;需要确認&quot;
 	sMsgFreeStock = &quot;需要輸入一個贈送的股票？&quot;
 	sMsgTotalLoss = &quot;要輸入一個全部損失的股票？&quot;
@@ -53,16 +53,16 @@ Sub LoadChineseTradLanguage()
 	TransactMode = LIFO	&apos; Possible values: &quot;FIFO&quot; and &quot;LIFO&quot;
 	DateCellStyle = &quot;結果 日期&quot;
 	CurrCellStyle = &quot;1&quot;
-	sStartDate = &quot;交割日期：&quot;
-	sEndDate = &quot;到期日期：&quot;
+	sStartDate = &quot;交割日期: &quot;
+	sEndDate = &quot;到期日期: &quot;
 	sStartUpWelcome = &quot;這個樣式用於高效能地管理股票交易。&quot;
 	sStartUpChooseMarket = &quot;請先選一個參照的貨幣和一個可直接從 Internet 更新資料的贈券交易所。&quot;
 	sStartUpHint = &quot;很遺憾，&lt;History&gt;-功能僅適用於美國的交易所。&quot;
 	sStartupHint = ReplaceString(sStartUpHint, sHistory, &quot;&lt;History&gt;&quot;)
 	sNoInternetUpdate = &quot;不透過 internet 更新&quot;
-	sMarketPlace = &quot;證券交易所：&quot;
+	sMarketPlace = &quot;證券交易所: &quot;
 	sNoInternetDataAvailable = &quot;無法接受 Internet 股票價格!&quot;
-	sCheckInternetSettings = &quot;可能的原因：&lt;BR&gt;Internet 設定不正確，需要重新設定。&lt;BR&gt;輸入了一個錯誤的股票代碼。&quot;
+	sCheckInternetSettings = &quot;可能的原因: &lt;BR&gt;Internet 設定不正確，需要重新設定。&lt;BR&gt;輸入了一個錯誤的股票代碼。&quot;
 	sCheckInternetSettings = ReplaceString(sCheckInternetSettings, chr(13), &quot;&lt;BR&gt;&quot;)
 
 	sMsgEndDatebeforeNow = &quot;到期日期必須是在今日之前！&quot;

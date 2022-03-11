@@ -6,7 +6,7 @@
 # Second_Author:  sanxi
 # Version: 1.1
 # Date:    2021/09/17
-# Description:  v1.1：修改进程启动机制为pid形式。
+# Description:  v1.1: 修改进程启动机制为pid形式。
 #############################
 #
 DIR_HOME=("/opt/openoffice.org3" "/opt/libreoffice" "/opt/libreoffice6.1" "/opt/libreoffice7.0" "/opt/libreoffice7.1" "/opt/openoffice4" "/usr/lib/openoffice" "/usr/lib/libreoffice")
@@ -24,7 +24,7 @@ fi
 ## 判断当前是否有进程处于运行状态
 if [ -s "${PID_FILE}" ]; then
   PID=$(cat "${PID_FILE}")
-  echo "进程已处于运行状态，进程号为：${PID}"
+  echo "进程已处于运行状态，进程号为: ${PID}"
   exit 1
 else
   cd "$KKFILEVIEW_BIN_FOLDER" || exit 1

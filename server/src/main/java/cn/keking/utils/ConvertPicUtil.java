@@ -101,9 +101,9 @@ public class ConvertPicUtil {
                     RenderedOp renderedOp = JAI.create("filestore", pb);
                     renderedOp.dispose();
 
-                    logger.info("每页分别保存至： " + fileJpg.getCanonicalPath());
+                    logger.info("每页分别保存至:  " + fileJpg.getCanonicalPath());
                 }else{
-                    logger.info("JPG文件已存在： " + fileJpg.getCanonicalPath());
+                    logger.info("JPG文件已存在:  " + fileJpg.getCanonicalPath());
                 }
 
                 listImageFiles.add(strJpgUrl);
